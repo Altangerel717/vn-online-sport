@@ -1,135 +1,33 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VN Online Shop</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #f2f2f2, #e6f0ff);
-      color: #333;
-    }
-    header {
-      background-color: #0047ab;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      font-weight: bold;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 8px;
-    }
-    main {
-      max-width: 1080px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      text-align: center;
-      color: #0047ab;
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-    .product-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      overflow: hidden;
-      text-align: center;
-    }
-    .product-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    }
-    .product-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: contain;
-      background: #f9f9f9;
-    }
-    .product-name {
-      font-weight: bold;
-      padding: 15px;
-      font-size: 1.1rem;
-      color: #0047ab;
-    }
-    footer {
-      background: #003366;
-      color: #eee;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 0.9rem;
-      margin-top: 40px;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VN Online Shop</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:20px; background:#f8f8f8; }
+  h1 { color: #0052cc; }
+  a.brand-link {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 15px;
+    background-color: #0052cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  a.brand-link:hover {
+    background-color: #003d99;
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>VN Online Shop</h1>
-    <p>Оригинал Anta, Nike, Li-Ning, ERKE, 361°, Regorer, Adidas пүүз болон спорт хувцас</p>
-  </header>
-  <main>
-    <h2>Манай бүтээгдэхүүнүүд</h2>
-    <div class="products">
-      <div class="product-card">
-        <a href="anta.html">
-          <img src="https://cdn.pixabay.com/photo/2021/04/19/19/40/sneakers-6191433_960_720.jpg" alt="Anta" />
-          <div class="product-name">Anta</div>
-        </a>
-      </div>
-      <div class="product-card">
-        <a href="nike.html">
-          <img src="https://cdn.pixabay.com/photo/2017/08/02/01/01/nike-2564419_960_720.jpg" alt="Nike" />
-          <div class="product-name">Nike</div>
-        </a>
-      </div>
-      <div class="product-card">
-        <a href="lining.html">
-          <img src="https://cdn.pixabay.com/photo/2020/05/15/12/58/sneakers-5170920_960_720.jpg" alt="Li-Ning" />
-          <div class="product-name">Li-Ning</div>
-        </a>
-      </div>
-      <div class="product-card">
-        <a href="regorer.html">
-          <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/sneakers-1838763_960_720.jpg" alt="Regorer" />
-          <div class="product-name">Regorer</div>
-        </a>
-      </div>
-      <div class="product-card">
-        <a href="361.html">
-          <img src="https://cdn.pixabay.com/photo/2015/09/04/23/08/footwear-923901_960_720.jpg" alt="361" />
-          <div class="product-name">361°</div>
-        </a>
-      </div>
-      <div class="product-card">
-        <a href="erke.html">
-          <img src="https://cdn.pixabay.com/photo/2018/03/31/12/45/running-shoes-3270875_960_720.jpg" alt="ERKE" />
-          <div class="product-name">ERKE</div>
-        </a>
-      </div>
-    </div>
-  </main>
-  <footer>
-    &copy; 2025 VN Online Shop. Бүх эрх хуулиар хамгаалагдсан.
-  </footer>
+  <h1>VN Online Shop</h1>
+  <p>Брэндүүдийн жагсаалт дээр дараад бүтээгдэхүүнүүдийг үзээрэй.</p>
+  <a href="anta.html" class="brand-link">Anta</a>
+  <a href="nike.html" class="brand-link">Nike</a>
+  <a href="lining.html" class="brand-link">Li-Ning</a>
+  <a href="adidas.html" class="brand-link">Adidas</a>
 </body>
 </html>
